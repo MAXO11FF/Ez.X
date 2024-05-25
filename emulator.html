@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMULATOR</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            font-family: Impact;
+            color: rgb(195, 0, 255);
+            text-align: center;
+        }
+        .video-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        .content {
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .title {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        .links a {
+            display: block;
+            margin: 10px 0;
+            color: rgb(195, 0, 255);
+            font-size: 1.5em;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .links a:hover {
+            color: #00e626;
+        }
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #ff9800;
+            color: green;
+            font-size: 1.2em;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .back-button:hover {
+            background-color: #00e626;
+        }
+    </style>
+</head>
+<body>
+    <video class="video-background" autoplay muted loop>
+        <source src="background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="content">
+        <div class="title">EMULATORS!</div>
+        <div class="links">
+            <a href="https://drive.google.com/file/d/1yyhuFNv-INejh9R1Rzeo927ZZqnXd_AL/view?usp=drive_link" target="_blank">E4VX 4.280</a>
+            <a href="https://drive.google.com/file/d/1PTD0gzoEyMNbV9tQWhSWXBVIiCqdAYpq/view?usp=drive_link" target="_blank">Ultra Ego</a>
+            <a href="https://www.mediafire.com/file/szmlg0ml2rkbtqz/LiteStacks_Installer.7z/file" target="_blank">LITESTACKS</a>
+            <a href="https://drive.google.com/file/d/1djjJbhCppwwg4KqrI4_OLm1KESpl4eoO/view?usp=drive_link" target="_blank">シ ッ ツ ヅ (ANTICRASH)</a>
+        </div>
+        <a class="back-button" href="website.html">Back</a>
+    </div>
+</body>
+</html>

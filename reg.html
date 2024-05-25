@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons with Background</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('about.png'); /* Replace 'background.png' with your actual image file */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .button-container {
+            text-align: center;
+        }
+        .button-container button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .button-container button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <button onclick="window.open('https://example.com/reg1', '_blank')">REG1</button>
+        <button onclick="window.open('https://example.com/reg2', '_blank')">REG2</button>
+        <button onclick="window.open('https://example.com/reg3', '_blank')">REG3</button>
+        <button onclick="window.open('https://example.com/reg4', '_blank')">REG4</button>
+        <button onclick="window.location.href = 'website.html'">Back</button>
+    </div>
+</body>
+</html>
