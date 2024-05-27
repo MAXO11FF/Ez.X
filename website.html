@@ -142,43 +142,43 @@
             <span class="close" onclick="closeModal()">&times;</span>
             <div class="wallpaper-preview">
                 <div class="wallpaper-item" onclick="changeWallpaper('wallpaper1.mp4')">
-                    <video src="wallpaper1.mp4" muted></video>
+                    <video src="wallpaper1.mp4" muted loop></video>
                     <p>Wallpaper 1</p>
                 </div>
                 <div class="wallpaper-item" onclick="changeWallpaper('wallpaper2.mp4')">
-                    <video src="wallpaper2.mp4" muted></video>
+                    <video src="wallpaper2.mp4" muted loop></video>
                     <p>Wallpaper 2</p>
                 </div>
                 <div class="wallpaper-item" onclick="changeWallpaper('wallpaper3.mp4')">
-                    <video src="wallpaper3.mp4" muted></video>
+                    <video src="wallpaper3.mp4" muted loop></video>
                     <p>Wallpaper 3</p>
                 </div>
                 <div class="wallpaper-item" onclick="changeWallpaper('wallpaper4.mp4')">
-                    <video src="wallpaper4.mp4" muted></video>
+                    <video src="wallpaper4.mp4" muted loop></video>
                     <p>Wallpaper 4</p>
                 </div>
                 <div class="wallpaper-item" onclick="changeWallpaper('wallpaper5.mp4')">
-                    <video src="wallpaper5.mp4" muted></video>
+                    <video src="wallpaper5.mp4" muted loop></video>
                     <p>Wallpaper 5</p>
                 </div>
                 <div class="wallpaper-item" onclick="changeWallpaper('wallpaper6.mp4')">
-                    <video src="wallpaper6.mp4" muted></video>
+                    <video src="wallpaper6.mp4" muted loop></video>
                     <p>Wallpaper 6</p>
                 </div>
                 <div class="wallpaper-item" onclick="changeWallpaper('wallpaper7.mp4')">
-                    <video src="wallpaper7.mp4" muted></video>
+                    <video src="wallpaper7.mp4" muted loop></video>
                     <p>Wallpaper 7</p>
                 </div>
                 <div class="wallpaper-item" onclick="changeWallpaper('wallpaper8.mp4')">
-                    <video src="wallpaper8.mp4" muted></video>
+                    <video src="wallpaper8.mp4" muted loop></video>
                     <p>Wallpaper 8</p>
                 </div>
                 <div class="wallpaper-item" onclick="changeWallpaper('wallpaper9.mp4')">
-                    <video src="wallpaper9.mp4" muted></video>
+                    <video src="wallpaper9.mp4" muted loop></video>
                     <p>Wallpaper 9</p>
                 </div>
                 <div class="wallpaper-item" onclick="changeWallpaper('wallpaper10.mp4')">
-                    <video src="wallpaper10.mp4" muted></video>
+                    <video src="wallpaper10.mp4" muted loop></video>
                     <p>Wallpaper 10</p>
                 </div>
             </div>
@@ -188,10 +188,16 @@
     <script>
         function openModal() {
             document.getElementById("wallpaperModal").style.display = "block";
+            // Play preview videos
+            const previewVideos = document.querySelectorAll(".wallpaper-preview video");
+            previewVideos.forEach(video => video.play());
         }
 
         function closeModal() {
             document.getElementById("wallpaperModal").style.display = "none";
+            // Pause preview videos
+            const previewVideos = document.querySelectorAll(".wallpaper-preview video");
+            previewVideos.forEach(video => video.pause());
         }
 
         function changeWallpaper(wallpaper) {
